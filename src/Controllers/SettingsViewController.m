@@ -1,11 +1,11 @@
 #import "SettingsViewController.h"
 
-@interface SettingsViewController ()
+@interface BHSettingsViewController ()
 @property (nonatomic, assign) BOOL hasDynamicSpecifiers;
 @property (nonatomic, retain) NSMutableDictionary *dynamicSpecifiers;
 @end
 
-@implementation SettingsViewController
+@implementation BHSettingsViewController
 - (instancetype)init {
     self = [super init];
     if (self) {
@@ -145,7 +145,8 @@
             [self newSectionWithTitle:@"Credits" footer:[NSString stringWithFormat:@"BHInsta %@", BHIVersionString]],
             [self newHBTwitterCellWithTitle:@"Maintainer" twitterUsername:@"SoVeryCuul" customAvatarURL:@"https://unavatar.io/twitter/SoVeryCuul"],
             [self newHBTwitterCellWithTitle:@"Original Author" twitterUsername:@"BandarHL" customAvatarURL:@"https://unavatar.io/twitter/BandarHL"],
-            [self newHBLinkCellWithTitle:@"View Repo" detailTitle:@"View the tweak's source code on GitHub" url:@"https://github.com/SoCuul/BHInsta"]
+            [self newHBLinkCellWithTitle:@"View Repo" detailTitle:@"View the tweak's source code on GitHub" url:@"https://github.com/SoCuul/BHInsta"],
+            [self newHBLinkCellWithTitle:@"Tip Jar" detailTitle:@"Donate via PayPal" url:@"https://www.paypal.me/BandarHL"]
         ]];
         
         [self collectDynamicSpecifiersFromArray:_specifiers];

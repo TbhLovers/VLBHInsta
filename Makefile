@@ -1,5 +1,6 @@
-TARGET := iphone:clang:14.5
-INSTALL_TARGET_PROCESSES = SpringBoard
+export TARGET := iphone:clang:14.5
+export ARCHS = arm64
+INSTALL_TARGET_PROCESSES = Instagram
 
 include $(THEOS)/makefiles/common.mk
 

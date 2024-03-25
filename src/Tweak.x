@@ -36,14 +36,6 @@ BOOL dmVisualMsgsViewedButtonEnabled = false;
         [[NSUserDefaults standardUserDefaults] setBool:true forKey:@"call_confirm"];
         [[NSUserDefaults standardUserDefaults] setBool:true forKey:@"hide_trending_searches"];
         [[NSUserDefaults standardUserDefaults] setBool:true forKey:@"no_suggested_threads"];
-
-        // Display settings modal on screen
-        NSLog(@"[BHInsta] Displaying BHInsta first-time settings modal");
-        UIViewController *rootController = [[self window] rootViewController];
-        SettingsViewController *settingsViewController = [SettingsViewController new];
-        UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:settingsViewController];
-        
-        [rootController presentViewController:navigationController animated:YES completion:nil];
     }
 
     NSLog(@"[BHInsta] Cleaning cache...");
