@@ -21,6 +21,7 @@
 + (BOOL)postCommentConfirmation;
 + (BOOL)copyDecription;
 + (BOOL)removeReelsTab;
++ (BOOL)blockAllReels;
 + (BOOL)noRecentSearches;
 + (BOOL)hideExploreGrid;
 + (BOOL)hideTrendingSearches;

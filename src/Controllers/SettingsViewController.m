@@ -109,6 +109,7 @@
             [self newSectionWithTitle:@"Focus" footer:nil],
             [self newSwitchCellWithTitle:@"Remove feed posts" detailTitle:@"Remove every posts in main feed" key:@"remove_feed_post" defaultValue:false changeAction:nil],
             [self newSwitchCellWithTitle:@"Hide Reels tab" detailTitle:@"Remove the access to Instagram Reels feed" key:@"remove_reels_tab" defaultValue:false changeAction:nil],
+            [self newSwitchCellWithTitle:@"Block all Reels" detailTitle:@"Completely block Reels from loading" key:@"block_all_reels" defaultValue:false changeAction:nil],
 
             // Section 4: Confirm actions
             [self newSectionWithTitle:@"Confirm actions" footer:nil],

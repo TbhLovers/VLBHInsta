@@ -56,6 +56,9 @@
 + (BOOL)removeReelsTab {
     return [[NSUserDefaults standardUserDefaults] boolForKey:@"remove_reels_tab"];
 }
++ (BOOL)blockAllReels {
+    return [[NSUserDefaults standardUserDefaults] boolForKey:@"block_all_reels"];
+}
 + (BOOL)noRecentSearches {
     return [[NSUserDefaults standardUserDefaults] boolForKey:@"no_recent_searches"];
 }
